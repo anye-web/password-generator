@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="Logo.png" alt="generate Password logo" class="logo" />
+    </nav>
+    <main class="main-content">
+      <div class="content">
+        <div class="card">
+          <div class="card-icon">
+            <ion-icon name="star" class="icon"></ion-icon>
+          </div>
+          <h1 class="heading-primary">Get your password!!</h1>
+          <p class="lead sub-heading hidden">
+            How many number of <span>letters</span>, <span>numbers</span>, and
+            <span>symbols</span> would you like
+          </p>
+          <p class="lead lead-text">
+            while most website require that your password should have symbols,
+            letters and numbers, it’s often difficult to came up with all that
+            let me help you with that.
+          </p>
+          <form class="form hidden">
+            <div class="form-group">
+              <label for="letters">letters</label>
+              <input
+                type="number"
+                id="letters"
+                class="form-input letter"
+                required
+                placeholder="Enter the amount of letters"
+              />
+            </div>
+            <div class="form-group">
+              <label for="numbers">Numbers</label>
+              <input
+                type="number"
+                id="numbers"
+                class="form-input number"
+                required
+                placeholder="Enter the amount of numbers"
+              />
+            </div>
+            <div class="form-group">
+              <label for="symbol">symbol</label>
+              <input
+                type="number"
+                id="symbol"
+                class="form-input symbol"
+                required
+                placeholder="Enter the amount of symbol"
+              />
+            </div>
+          </form>
+          <button class="btn generate">generate your password</button>
+          <button class="btn create hidden">create password</button>
+          <button class="btn copy hidden">copy password</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Icon Scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Sccript -->
+    <script src="script.js"></script>
+  </body>
+</html>
